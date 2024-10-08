@@ -1,17 +1,9 @@
-// OPTION 3 (HARDER) - GREEN SCREEN
-// DO NOT SHARE
-
 #include <cstdint>
 #include <cstdlib>
-#include <vector>
-
-using namespace std;
 
 // Implement a blitting function which supports color-keyed transparency.
 
-unsigned int const COLOR_KEY {
-    0xFF000000
-};
+unsigned int const COLOR_KEY = 0xFF000000;
 
 struct PixelBuffer {
     uint32_t *pixels;
@@ -24,6 +16,4 @@ struct PixelBuffer {
 // `offsetX` and `offsetY` denote the origin within `dest` where `src` should be copied.
 // Any pixel that exactly matches `COLOR_KEY` should be skipped.
 // You may assume input buffers are pre-allocated and sufficiently large to complete the requested operation.
-void blit(PixelBuffer const* src, PixelBuffer* dest, size_t offsetX, size_t offsetY) {
-
-}
+void blit(PixelBuffer const* src, PixelBuffer* dest, size_t offsetX, size_t offsetY);
